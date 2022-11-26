@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Card game JS</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body class="body">
+		<header class="header">
+			<h1>Card game JS</h1>
+		</header>
+
+		<div class="page">
+
+			<main>
+				<div class="timer"></div>
+				<div class="container">
+					<div class="bord"></div>
+					<div class="game_end">
+						<form id="form_lose" class="form_lose">
+							<label class="label" for="input__colCard">Введите размер поля</label>
+							<input min="2" step="1" max="6" value="4" name="input__colCard" id="input__colCard" class="input" type="number" class="timeWait">
+							<label class="label" for="input__timeWait">Введите время подготовки</label>
+							<input min="1" step="1" max="6000" value="10" name="input__timeWait" id="input__timeWait" class="input" type="number" class="timeWait">
+							<label class="label" for="input__timeGame">Введите время игры</label>
+							<input min="1" max="6000" value="30" name="input__timeGame" id="input__timeGame" class="input" type="number" class="timeGame">
+							<button class="card__button restart">Restart</button>
+						</form>
+					</div>
+				</div>
+				<button class="card__button card__check">Посмотреть карточки</button>
+				<button class="card__button close__card">Скрыть карточки</button>
+			</main>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>

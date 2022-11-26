@@ -1,0 +1,198 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #edf7f7;
+}
+
+.header {
+	text-align: center;
+	padding-top: 50px;
+	height: 70px;
+	border-bottom: 1px solid rgba(84, 84, 84, .7);
+	box-shadow: 0 -5px 5px 10px rgba(0,0,0,0.2);
+	margin: 0 auto 0 auto;
+}
+
+.bord {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px auto 0 auto;
+	height: max-content;
+	font-size: 0px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.page {
+	position: relative;
+}
+
+.card_photo {
+	min-height: 164px;
+	max-height: 164px;
+	min-width: 276px;
+	max-width: 276px;
+	opacity: 1;
+	transition: opacity 0.2s;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.container {
+	position: relative;
+}
+
+ .card_disable {
+	background-color: #472389;
+	border: 1px solid #6d47b5;
+	width: max-content;
+	height: max-content;
+} 
+
+.card_active {
+	height: 50px;
+	width: 50px;
+}
+
+.card__button {
+	display: block;
+	border: 0;
+	background-color: #d1c9da;
+	border-radius: 5px;
+	margin: 5px auto 0 auto;
+	border: 1px solid #6d47b5;
+}
+
+.timer {
+	position: absolute;
+	left: calc(50% - 450px);
+	top: -55px;
+	font-size: 50px;
+	font-weight: 900;
+	width: 900px;
+	text-align: center;
+}
+
+.pointer__fix {
+	position: absolute;
+	left: center;
+	top: center;
+	opacity: 0;
+	background-color: #472389;
+	border: 1px solid #6d47b5;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.win {
+	color: #2196f3;
+	font-weight: 400;
+	font-size: 25px;
+	margin: 20px auto 10px auto;
+	text-align: center;
+}
+
+.game_end {
+	display: none;
+	position: absolute;
+	background-image: url(./img/loos.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 0 auto;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	margin: auto; 
+	flex-direction: column;
+}
+
+.restart {
+	outline: none;
+	height: 20px;
+	border: 2px solid rgba(10, 247, 247, 0.3);
+	background-color: rgba(0,0,0,0.0);
+	color: rgba(10, 247, 247, 0.7);
+	min-width: 10%;
+	transition: border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.restart:hover,
+.restart:focus {
+	cursor: pointer;
+	color: rgba(10, 247, 247, 1);
+	border: 2px solid rgba(10, 247, 247, 1);
+}
+
+.label {
+  color: #2196f3;
+}
+
+.input {
+	margin: 5px auto 10px auto;
+	text-align: center;
+	color: blue;
+	width: 20%;
+	font-family: inherit;
+  display: block;
+  padding: 0 0 9px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+	background-color: rgba(194, 194, 194,0.3);
+	transition: border-color 0.20s ease-in-out, box-shadow 0.20s ease-in-out;
+	border-radius: 3px;
+}
+
+.input:focus {
+  border-color: #bdbdbd;
+  border-bottom: 0;
+  outline: 0;
+	border: 0;
+	border-bottom: 2px solid rgba(40, 252, 20, 0.5);
+	border-right: 1px solid rgba(40, 252, 20, 0.5);
+  box-shadow: 5px 5px 10px 0px rgba(40, 252, 20, 0.5);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0; 
+}
+
+.input:invalid{
+  border-color: red;
+  padding-right: 20px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 3px center;
+  background-size: 17px 17px;
+}
+
+.input:invalid:focus {
+  box-shadow: 5px 5px 5px 0px rgba(255, 15, 20, 0.5);
+}
+
+.form_lose {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.red {
+	color: red;
+}
